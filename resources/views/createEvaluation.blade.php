@@ -54,6 +54,15 @@
                 </select>
             </div>
             <div class="mb-3">
+                <label for="numero_ctrl" class="form-label">Numéro de contrôle</label>
+                <select name="numero_ctrl" id="numero_ctrl" class="form-select">
+                    <option value="">Sélectionner le numéro de contrôle</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="mb-3">
                 <label for="date" class="form-label" >Date</label>
                 <input type="date" name="date" id="date" class="form-control" required>
             </div>
@@ -67,7 +76,7 @@
             </div>
             <div class="mb-3">
                 <label for="duree" class="form-label" >Durée</label>
-                <input type="number" name="duree" id="duree" class="form-control" placeholder="Entrer la durée en minutes" required>
+                <input type="number" name="duree" id="duree" class="form-control" placeholder="Entrer la durée" required>
             </div>
             <div class="text-center">
                 <button type="submit" class="btn" style="background-color: #4a7c59; color: #fff;">Ajouter Évaluation</button>

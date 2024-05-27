@@ -1,7 +1,7 @@
 <style>
     .footer{
         position: relative;
-        bottom: -50%;
+
 
     }
 </style>

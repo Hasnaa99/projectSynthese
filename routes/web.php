@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FormateurController;
 use App\Http\Controllers\GroupeController;
 use App\Http\Controllers\ModuleController;
+use App\Http\Controllers\NotationController;
 use App\Http\Controllers\StagiaireController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,3 +28,5 @@ Route::get('/rechercher_stagiaire',[StagiaireController::class,'rechercher_stagi
 //Evaluation
 Route::get('/create_evaluation/groupe/{groupe_id}/module/{module_id}',[ModuleController::class,'create_evaluation'])->name('create_evaluation');
 Route::post('/store_evaluation',[ModuleController::class,'store_evaluation'])->name('store_evaluation');
+//Notation
+Route::post('/save-notes', [NotationController::class, 'saveNotes'])->name('save_notes');
